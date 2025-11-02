@@ -1,0 +1,21 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "finger6.dtsi"
+
+&default_transform {
+    col-offset = <7>;
+};
+
+&kscan0 {
+    col-gpios
+        = <&nice_nano p031 GPIO_ACTIVE_HIGH>
+        , <&nice_nano p029 GPIO_ACTIVE_HIGH>
+        , <&nice_nano p002 GPIO_ACTIVE_HIGH>
+        , <&nice_nano p115 GPIO_ACTIVE_HIGH>
+        , <&nice_nano p113 GPIO_ACTIVE_HIGH>
+        ;
+};
