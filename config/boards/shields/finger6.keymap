@@ -10,9 +10,7 @@
  #include <dt-bindings/zmk/outputs.h>
 
  #define DEFAULT 0
- #define LOWER  1
- #define RAISE  2
- #define ADJUST 3
+
 
 /* NOTE: At the time of the creation of this keymap, there are no specified codes for 'eisuu' and 'kana' input in ZMK.
 However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
@@ -35,9 +33,8 @@ As such, those are in use within the default layer at this time.*/
        &kp TAB    &kp Q   &kp W    &kp E    &kp R     &kp T                                &kp Y     &kp U     &kp I     &kp O      &kp P     &kp BSPC
        &kp LSHIFT &kp A   &kp S    &kp D    &kp F     &kp G                                &kp H     &kp J     &kp K     &kp L      &kp SEMI  &kp SQT
        &kp LCTRL  &kp Z   &kp X    &kp C    &kp V     &kp B                                &kp N     &kp M     &kp COMMA &kp PERIOD &kp SLASH &kp RET
-                  &kp FN  &kp LALT &kp LGUI &kp G     &kp SPACE                            &kp T     &kp LANG1 &kp LEFT  &kp DOWN   &kp UP    
+                  &kp A  &kp LALT &kp LGUI &kp G     &kp SPACE                            &kp T     &kp LANG1 &kp LEFT  &kp DOWN   &kp UP    
                      >;
-              };
-              
+              };  
        };
 };
